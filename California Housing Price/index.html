@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Housing Price Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600 flex items-center">
+                <i class="fas fa-chart-line mr-2"></i> Housing Predictor
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
+                <li><a href="#features" class="text-gray-700 hover:text-blue-600 transition">Features</a></li>
+                <li><a href="#course" class="text-gray-700 hover:text-blue-600 transition">ML Course</a></li>
+                <li><a href="#installation" class="text-gray-700 hover:text-blue-600 transition">Installation</a></li>
+                <li><a href="#resources" class="text-gray-700 hover:text-blue-600 transition">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-gray-800 to-blue-500 text-white py-24 relative">
+        <div class="container mx-auto px-6 text-center fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">California Housing Price Prediction</h1>
+            <p class="text-lg md:text-2xl mb-8">Predict house prices with advanced machine learning and an intuitive GUI.</p>
+            <a href="#resources" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition text-lg">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 scale-in text-blue-600">Project Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition transform scale-in">
+                    <i class="fas fa-cogs text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Gradient Boosting Model</h3>
+                    <p class="text-gray-600">High-accuracy predictions with R²: 0.81 using Gradient Boosting.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition transform scale-in" style="animation-delay: 0.2s;">
+                    <i class="fas fa-laptop-code text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Tkinter GUI</h3>
+                    <p class="text-gray-600">Interactive interface with real-time charts and prediction history.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:-translate-y-2 transition transform scale-in" style="animation-delay: 0.4s;">
+                    <i class="fas fa-server text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Flask API</h3>
+                    <p class="text-gray-600">RESTful API for seamless prediction integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Machine Learning Course Section -->
+    <section id="course" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 scale-in text-blue-600">Machine Learning Course</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Learn key ML concepts with this project-based course.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md scale-in">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Core Concepts</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Linear Regression</li>
+                        <li>Cross-Validation</li>
+                        <li>Feature Engineering</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md scale-in" style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Advanced Techniques</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Gradient Boosting</li>
+                        <li>Hyperparameter Tuning</li>
+                        <li>Model Deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interface Section -->
+    <section id="interface" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 scale-in text-blue-600">Application Interface</h2>
+            <div class="max-w-4xl mx-auto">
+                <img src="https://github.com/Ad2m1109/Machine-Lerning/raw/main/interface.png" alt="California Housing Price Predictor Interface" class="w-full rounded-lg shadow-md mb-6 scale-in">
+                <p class="text-gray-600 text-center">The interface allows users to input housing features (e.g., Median Income, House Age, Population) and predict house values using the Gradient Boosting model. It includes visualizations such as input features vs. predicted values, median vs. predicted house value comparisons, and a distribution of predicted house values. Users can view previous predictions in a table and load them for analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide Section -->
+    <section id="installation" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-600">Installation Guide</h2>
+            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+                <ol class="text-gray-700 space-y-6">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">1.</span>
+                        <div>
+                            <strong>Clone the repository:</strong>
+                            <pre class="bg-gray-100 p-3 mt-2 rounded text-sm"><code>git clone https://github.com/Ad2m1109/Machine-Lerning.git
+cd Machine-Lerning</code></pre>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">2.</span>
+                        <div>
+                            <strong>Create a virtual environment:</strong>
+                            <pre class="bg-gray-100 p-3 mt-2 rounded text-sm"><code>python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate</code></pre>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">3.</span>
+                        <div>
+                            <strong>Install dependencies:</strong>
+                            <pre class="bg-gray-100 p-3 mt-2 rounded text-sm"><code>pip install -r requirements.txt</code></pre>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">4.</span>
+                        <div>
+                            <strong>Run the GUI application:</strong>
+                            <pre class="bg-gray-100 p-3 mt-2 rounded text-sm"><code>python gui_app.py</code></pre>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-20 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 scale-in">Resources</h2>
+            <p class="text-lg mb-8 scale-in">Access the code and download the application.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/Ad2m1109/Machine-Lerning" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition">View Code on GitHub</a>
+                <a href="https://github.com/Ad2m1109/Machine-Lerning/releases/download/v1.0/housing_predictor.exe" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Download .exe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">© 2025 California Housing Price Prediction. Powered by Machine Learning.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/Ad2m1109" class="hover:text-blue-400 transition"><i class="fab fa-github text-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
