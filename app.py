@@ -12,7 +12,7 @@ def show_converter():
 
 @app.route('/california-housing')  # Added slash and hyphens
 def show_housing():
-    return send_from_directory('California-Housing-Price', 'index.html')
+    return send_from_directory('California Housing Price', 'index.html')
 
 @app.route('/')
 def home():
