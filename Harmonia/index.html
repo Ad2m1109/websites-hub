@@ -44,10 +44,9 @@
       margin: 0;
       padding: 0;
       background-color: var(--light);
+      scroll-behavior: smooth;
       overflow-x: hidden;
     }
-
-    /* REMOVED scroll-behavior: smooth from body to prevent conflicts */
 
     /* Header Styles */
     header {
@@ -61,7 +60,6 @@
       z-index: 1000;
       backdrop-filter: blur(10px);
       box-shadow: var(--shadow-sm);
-      transition: transform 0.3s ease-in-out;
     }
 
     .navbar {
@@ -99,7 +97,6 @@
       transition: var(--transition);
       padding: 0.5rem 1rem;
       border-radius: var(--rounded-md);
-      cursor: pointer;
     }
 
     .nav-links a:hover {
@@ -671,30 +668,6 @@
     .animate-on-scroll {
       animation: fadeInUp 0.6s ease-out;
     }
-
-    /* Scroll to top button */
-    .scroll-to-top {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      background: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      cursor: pointer;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.3s ease;
-      z-index: 1000;
-      box-shadow: var(--shadow-lg);
-    }
-
-    .scroll-to-top.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
   </style>
 </head>
 
@@ -792,6 +765,7 @@
             <i class="fas fa-bell"></i>
           </div>
           <h3>Smart Reminders</h3>
+          <img src="/Harmonia/images/tl (19).webp" alt="Smart reminders interface with medication alerts" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
           <p>Gentle medication alerts and task notifications with voice input support to maintain routines.</p>
         </div>
         
@@ -800,6 +774,7 @@
             <i class="fas fa-users"></i>
           </div>
           <h3>Family Profiles</h3>
+          <img src="/Harmonia/images/tl (10).webp" alt="Family profiles showing photos of loved ones" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
           <p>Photo-based recognition helps patients remember loved ones with visual cues.</p>
         </div>
         
@@ -808,6 +783,7 @@
             <i class="fas fa-book"></i>
           </div>
           <h3>Digital Journal</h3>
+          <img src="/Harmonia/images/tl (16).webp" alt="Digital journal interface with photos and notes" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
           <p>Record moods, thoughts, and memories through photos, notes, and voice logs.</p>
         </div>
         
@@ -816,6 +792,7 @@
             <i class="fas fa-gamepad"></i>
           </div>
           <h3>Memory Games</h3>
+          <img src="/Harmonia/images/tl (17).webp" alt="Memory matching game with family photos" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
           <p>Engaging exercises personalized with familiar faces to support cognition.</p>
         </div>
         
@@ -824,6 +801,7 @@
             <i class="fas fa-universal-access"></i>
           </div>
           <h3>Accessibility Suite</h3>
+          <img src="/Harmonia/images/tl (20).webp" alt="App interface showing large buttons and high contrast" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
           <p>Large buttons, voice controls, high contrast UI — easy for everyone to use.</p>
         </div>
         
@@ -832,7 +810,62 @@
             <i class="fas fa-cloud-upload-alt"></i>
           </div>
           <h3>Secure Backup</h3>
+          <img src="/Harmonia/images/tl (24).webp" alt="Cloud backup settings screen" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
           <p>Optional Google Drive sync for data recovery — completely private and encrypted.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-first-aid"></i>
+          </div>
+          <h3>Emergency SOS</h3>
+          <img src="/Harmonia/images/tl (25).webp" alt="Emergency SOS button interface" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
+          <p>Instantly call a trusted contact using the SOS button on the home screen.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <h3>Offline Functionality</h3>
+          <img src="/Harmonia/images/tl (26).webp" alt="App working without internet connection" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
+          <p>Works without internet — all data is saved locally for safety and privacy.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Geofence Alerts</h3>
+          <img src="/Harmonia/images/tl (15).webp" alt="Map interface showing safe zones" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
+          <p>Notifies caregivers if the patient moves over 100 meters from home.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-smile"></i>
+          </div>
+          <h3>Emotional Journal</h3>
+          <img src="/Harmonia/images/tl (27).webp" alt="Mood tracking interface with emoji selection" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
+          <p>Track emotional well-being through a daily mood log interface.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3>PIN Protection</h3>
+          <img src="/Harmonia/images/tl (28).webp" alt="PIN entry screen for security" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
+          <p>Only caregivers with a PIN can edit personal or medical details.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-adjust"></i>
+          </div>
+          <h3>Light & Dark Mode</h3>
+          <img src="/Harmonia/images/tl (29).webp" alt="App showing both light and dark mode" style="width: 120px; height: 120px; margin: 1rem auto; display: block; object-fit: contain;">
+          <p>User-friendly interface that adapts to different lighting preferences.</p>
         </div>
       </div>
     </div>
@@ -878,6 +911,39 @@
             <li>No vendor lock-in</li>
           </ul>
         </div>
+        
+        <div class="tech-item">
+          <h4><i class="fas fa-cogs"></i> Key Dependencies</h4>
+          <ul>
+            <li>shared_preferences - App settings</li>
+            <li>path_provider - File system access</li>
+            <li>csv - Data parsing</li>
+            <li>url_launcher - Email integration</li>
+            <li>timezone - Tunisia support</li>
+          </ul>
+        </div>
+        
+        <div class="tech-item">
+          <h4><i class="fas fa-universal-access"></i> Accessibility Focus</h4>
+          <ul>
+            <li>Voice commands and controls</li>
+            <li>Large, clear UI elements</li>
+            <li>High contrast options</li>
+            <li>Simple navigation patterns</li>
+            <li>Adjustable text sizes</li>
+          </ul>
+        </div>
+        
+        <div class="tech-item">
+          <h4><i class="fas fa-bell"></i> Background Services</h4>
+          <ul>
+            <li>Hourly wellness notifications</li>
+            <li>App lifecycle management</li>
+            <li>Persistent background operation</li>
+            <li>Emergency contact integration</li>
+            <li>Theme persistence</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -895,6 +961,9 @@
           <div class="step-content">
             <h4>Download APK</h4>
             <p>Download the latest Harmonia APK file from our secure download link or scan the QR code.</p>
+            <div class="code-block"># Download size: ~50MB
+# Compatible: Android 6.0+
+# No Google Play Store required</div>
           </div>
         </div>
         
@@ -903,6 +972,9 @@
           <div class="step-content">
             <h4>Enable Unknown Sources</h4>
             <p>Allow installation from unknown sources in your Android settings if prompted.</p>
+            <div class="code-block">Settings → Security → Install unknown apps
+OR
+Settings → Apps → Special access → Install unknown apps</div>
           </div>
         </div>
         
@@ -911,6 +983,11 @@
           <div class="step-content">
             <h4>Install Application</h4>
             <p>Open your Downloads folder, tap the APK file, and follow the installation prompts.</p>
+            <div class="code-block"># Installation process:
+1. Tap Harmonia.apk file
+2. Tap "Install" button
+3. Wait for installation to complete
+4. Tap "Open" to launch</div>
           </div>
         </div>
         
@@ -919,7 +996,26 @@
           <div class="step-content">
             <h4>Setup & Configuration</h4>
             <p>Complete the initial setup process and configure notifications for optimal experience.</p>
+            <div class="code-block"># First launch setup:
+- Profile creation
+- Emergency contacts
+- Notification permissions
+- Accessibility preferences</div>
           </div>
+        </div>
+      </div>
+      
+      <div style="background: var(--secondary); padding: 2rem; border-radius: var(--rounded-lg); margin-top: 3rem; text-align: center;">
+        <h3 style="color: var(--dark); margin-bottom: 1rem;">
+          <i class="fas fa-mobile-alt"></i> System Requirements
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; text-align: left; max-width: 800px; margin: 0 auto;">
+          <div><strong>Platform:</strong> Android 6.0+</div>
+          <div><strong>Storage:</strong> 50MB free space</div>
+          <div><strong>RAM:</strong> 1GB minimum</div>
+          <div><strong>Network:</strong> Offline capable</div>
+          <div><strong>Permissions:</strong> Storage, Notifications</div>
+          <div><strong>Language:</strong> Multilingual support</div>
         </div>
       </div>
     </div>
@@ -963,6 +1059,25 @@
     </div>
   </section>
 
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Families Are Saying</h2>
+        <p>Real experiences from families using Harmonia to navigate Alzheimer's challenges together.</p>
+      </div>
+      
+      <div class="testimonial">
+        <p>"Harmonia has been a game-changer for my father. The photo recognition feature helps him remember us even on difficult days, and the reminders ensure he takes his medication on time. As a caregiver, the peace of mind is priceless."</p>
+        <p class="testimonial-author">— Sarah Johnson, Daughter of Alzheimer's Patient</p>
+      </div>
+      
+      <div class="testimonial">
+        <p>"The simple interface means my wife can use it independently. She enjoys the memory games with our family photos, and I appreciate the alerts if she wanders beyond our neighborhood. It respects her dignity while keeping her safe."</p>
+        <p class="testimonial-author">— Michael Chen, Husband and Caregiver</p>
+      </div>
+    </div>
+  </section>
+
   <section id="download" class="download-section">
     <div class="container">
       <h2>Download Harmonia Today</h2>
@@ -970,7 +1085,7 @@
       
       <div class="qr-container">
         <div class="qr-code">
-          <div style="width: 150px; height: 150px; background: #ddd; margin-bottom: 1rem; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666;">QR Code</div>
+          <img src="/Harmonia/qrcode.png" alt="QR Code to download Harmonia app">
           <p style="color: var(--dark);">Scan to download</p>
         </div>
         
@@ -983,6 +1098,19 @@
             <i class="fab fa-github"></i> Download from GitHub
           </a>
         </div>
+      </div>
+      
+      <div style="background: var(--light); padding: 2rem; border-radius: var(--rounded-lg); margin-top: 3rem; box-shadow: var(--shadow-md);">
+        <h3 style="color: var(--dark); margin-bottom: 1rem;">
+          <i class="fas fa-info-circle"></i> Installation Steps
+        </h3>
+        <ol style="text-align: left; max-width: 600px; margin: 0 auto; color: var(--gray);">
+          <li>Download the APK file from the link above</li>
+          <li>Open your Downloads folder and tap the APK file</li>
+          <li>If installation is blocked, go to <strong>Settings → Security → Enable "Install unknown apps"</strong></li>
+          <li>Follow the installation prompts and launch Harmonia</li>
+          <li>Complete the setup process and start using the app</li>
+        </ol>
       </div>
     </div>
   </section>
@@ -1028,12 +1156,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Scroll to top button -->
-  <button class="scroll-to-top" id="scrollToTop">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
   <script>
     // WORKING SMOOTH SCROLL SCRIPT FOR HARMONIA
 
