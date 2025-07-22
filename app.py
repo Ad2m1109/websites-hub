@@ -4,14 +4,8 @@ from urllib.parse import unquote
 import mimetypes
 
 app = Flask(__name__)
-
-# Ensure .webp MIME type is registered
 mimetypes.add_type('image/webp', '.webp')
-
-# Get the absolute path to the project directory
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-
-# ========== Harmonia Project Routes ==========
 @app.route('/Harmonia')
 def harmonia_redirect():
     harmonia_path = os.path.join(BASE_DIR, 'Harmonia', 'index.html')
@@ -27,24 +21,18 @@ def harmonia_static(filename):
         return send_from_directory(directory, decoded_filename)
     except:
         abort(404)
-
-# ========== MP3-MP4 Converter Routes ==========
 @app.route('/MP3-MP4-Converter')
 def converter_redirect():
     try:
         return send_from_directory(os.path.join(BASE_DIR, 'MP3-MP4-Converter'), 'index.html')
     except FileNotFoundError:
         abort(404)
-
-# ========== California Housing Price Routes ==========
 @app.route('/California-Housing-Price')
 def housing_redirect():
     try:
         return send_from_directory(os.path.join(BASE_DIR, 'California-Housing-Price'), 'index.html')
     except FileNotFoundError:
         abort(404)
-
-# ========== Homepage Route ==========
 @app.route('/')
 def home():
     return """
