@@ -1,0 +1,239 @@
+<div class="mr-grammer-page dark-theme">
+  <header class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="https://ademyoussfi.onrender.com/" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-arrow-left me-2"></i> Back to Hub
+        </a>
+        <a class="navbar-brand fw-bold mx-auto" href="#">Mr. Grammar</a>
+        <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngClass]="{'show': isMenuOpen}">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(features)">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(technical)">Technical</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(installation)">Installation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Ad2m1109/Mr-Grammer" target="_blank">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(download)">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(contact)">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="display-4 fw-bold">Perfect Your English with AI</h2>
+            <p class="lead">Mr. Grammar is your personal AI writing assistant, designed to help you improve your English grammar, vocabulary, and overall writing skills through interactive conversations and real-time corrections.</p>
+            <div class="mb-4">
+              <span class="badge me-2"><i class="fab fa-flutter"></i> Flutter</span>
+              <span class="badge me-2"><i class="fas fa-robot"></i> Gemini API</span>
+              <span class="badge me-2"><i class="fas fa-check-double"></i> LanguageTool</span>
+              <span class="badge me-2"><i class="fab fa-github"></i> Open Source</span>
+            </div>
+            <a class="btn btn-primary btn-lg" (click)="scrollTo(download)">Download Now</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="https://github.com/Ad2m1109/Mr-Grammer/blob/main/assets/homepagephoto.jpg?raw=true" alt="Mr. Grammar App Screenshot" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <section #features class="py-5">
+      <h3 class="text-center fw-bold mb-5 text-primary">Key Features</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-spell-check fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Real-time Grammar Check</h5>
+              <p class="card-text">Get instant corrections and suggestions for your writing, ensuring accuracy and clarity.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-comments fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">AI-Powered Conversational Learning</h5>
+              <p class="card-text">Engage in interactive chats with Mr. Grammar to practice your English in a natural, supportive environment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Track Your Progress</h5>
+              <p class="card-text">Monitor your improvement over time with detailed insights into your common errors and learning trends.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-microphone-alt fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Text-to-Speech Integration</h5>
+              <p class="card-text">Listen to corrections and bot responses to improve your pronunciation and listening skills.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-language fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Multi-language Support</h5>
+              <p class="card-text">Start conversations in various languages to get tailored assistance (English, French, Arabic, German, Spanish).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Cross-Platform Availability</h5>
+              <p class="card-text">Access Mr. Grammar on your Android and iOS devices, ensuring learning on the go.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #technical class="py-5">
+      <h3 class="text-center fw-bold mb-5 text-primary">Technical Overview</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Frontend</h5>
+              <ul class="list-unstyled">
+                <li><i class="fab fa-flutter me-2 text-primary"></i> Flutter (Dart)</li>
+                <li>Responsive UI with Material Design</li>
+                <li>Animations for engaging user experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Backend/APIs</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-brain me-2 text-primary"></i> Google Gemini API for AI conversations</li>
+                <li><i class="fas fa-check-double me-2 text-primary"></i> LanguageTool API for grammar and spelling checks</li>
+                <li>HTTP for API communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Data Persistence</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-database me-2 text-primary"></i> shared_preferences for local conversation storage</li>
+                <li>Secure handling of conversation history</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #installation class="py-5">
+      <h3 class="text-center fw-bold mb-5 text-primary">Installation Guide</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">1</div>
+              <h5 class="card-title fw-bold">Clone the Repository</h5>
+              <p class="card-text">Get the source code from GitHub.</p>
+              <pre><code>git clone https://github.com/Ad2m1109/Mr-Grammer.git
+cd Mr-Grammer</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">2</div>
+              <h5 class="card-title fw-bold">Install Dependencies</h5>
+              <p class="card-text">Install the required Flutter packages.</p>
+              <pre><code>flutter pub get</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">3</div>
+              <h5 class="card-title fw-bold">Run the App</h5>
+              <p class="card-text">Launch the application on your connected device or emulator.</p>
+              <pre><code>flutter run</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #download class="py-5 text-center">
+      <div class="card download-card p-4">
+        <h3 class="fw-bold">Download Mr. Grammar</h3>
+        <p class="lead">Ready to enhance your English skills? Download the latest release from GitHub.</p>
+        <a href="https://github.com/Ad2m1109/Mr-Grammer/releases" class="btn btn-primary btn-lg">
+          <i class="fab fa-github me-2"></i> View Releases
+        </a>
+        <p class="small mt-2">Android & iOS builds available.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer #contact class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="fw-bold">About Mr. Grammar</h5>
+          <p>Mr. Grammar is dedicated to providing an accessible and effective way for learners worldwide to master the English language.</p>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-white text-decoration-none" (click)="scrollTo(features)">Features</a></li>
+            <li><a class="text-white text-decoration-none" (click)="scrollTo(technical)">Technical</a></li>
+            <li><a class="text-white text-decoration-none" href="https://github.com/Ad2m1109/Mr-Grammer" target="_blank">GitHub</a></li>
+            <li><a class="text-white text-decoration-none" (click)="scrollTo(download)">Download</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5 class="fw-bold">Contact Me</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope me-2"></i> <a href="mailto:ademyoussfi57@gmail.com" class="text-white text-decoration-none">ademyoussfi57@gmail.com</a></li>
+            <li><i class="fab fa-linkedin me-2"></i> <a href="https://www.linkedin.com/in/adem-youssfi-2289672a4" target="_blank" class="text-white text-decoration-none">Adem Youssfi</a></li>
+            <li><i class="fas fa-globe me-2"></i> <a href="https://ademyoussfi.onrender.com" target="_blank" class="text-white text-decoration-none">Personal Website</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center border-top border-secondary pt-3">
+        <p class="mb-0">&copy; 2025 Mr. Grammar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,6 @@
+/* Adjust text color for the system requirements section */
+.dark-theme .mt-5.p-4.bg-light.text-dark.rounded {
+  background-color: #2a2a2a !important;
+  color: #f0f0f0 !important;
+  border: 1px solid #444;
+}

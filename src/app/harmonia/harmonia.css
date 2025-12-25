@@ -1,0 +1,107 @@
+/* Navbar Animations */
+.navbar {
+  transition: transform 0.3s ease;
+}
+
+.nav-link {
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--bs-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Hero Section Custom Gradient */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23000000" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Feature Icon Circle */
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  color: white;
+}
+
+/* Card Hover Effects */
+.dark-theme .card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-bottom {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dark-theme .card:hover .card-img-bottom {
+  transform: scale(1.05);
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+}
+
+/* Mobile Menu Enhancement */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+}

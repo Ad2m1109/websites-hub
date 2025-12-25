@@ -1,0 +1,244 @@
+<div class="spendora-page dark-theme">
+  <header class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="https://ademyoussfi.onrender.com/" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-arrow-left me-2"></i> Back to Hub
+        </a>
+        <a class="navbar-brand fw-bold mx-auto" href="#">Spendora</a>
+        <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngClass]="{'show': isMenuOpen}">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(features)">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(technical)">Technical</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(installation)">Installation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(download)">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Ad2m1109/Spendora" target="_blank">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollTo(contact)">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="display-4 fw-bold">Track Your Finances, Achieve Your Goals</h2>
+            <p class="lead">Spendora is a personal finance tracking application that helps you manage your income, expenses, and savings goals with an intuitive and visual interface.</p>
+            <div class="mb-4">
+              <span class="badge me-2"><i class="fab fa-python"></i> Python Backend</span>
+              <span class="badge me-2"><i class="fab fa-flutter"></i> Flutter App</span>
+              <span class="badge me-2"><i class="fas fa-database"></i> MySQL</span>
+              <span class="badge me-2"><i class="fas fa-chart-pie"></i> Data Visualization</span>
+            </div>
+            <a class="btn btn-primary btn-lg" (click)="scrollTo(download)">Download Now</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="https://github.com/Ad2m1109/Spendora/blob/main/logo.png?raw=true" alt="Spendora App Screenshot" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <section #features class="py-5">
+      <h3 class="text-center fw-bold mb-5 text-primary">Core Features</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-user-shield fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">User Authentication</h5>
+              <p class="card-text">Secure registration, login, and profile management to keep your financial data safe.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-exchange-alt fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Income & Expense Management</h5>
+              <p class="card-text">Add, edit, delete, and categorize your financial transactions with ease.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-tachometer-alt fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Dashboard</h5>
+              <p class="card-text">Visualize your financial situation with interactive graphs and charts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-bullseye fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Financial Goals</h5>
+              <p class="card-text">Set savings goals and track your progress towards achieving them.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-file-invoice-dollar fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Reports & Insights</h5>
+              <p class="card-text">Generate monthly and annual reports to understand your spending habits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <i class="fas fa-file-csv fa-3x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">CSV Export</h5>
+              <p class="card-text">Export your financial data in CSV format for external analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #technical class="py-5">
+      <h3 class="text-center fw-bold mb-5 text-primary">Technical Architecture</h3>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mobile Application</h5>
+              <ul class="list-unstyled">
+                <li><i class="fab fa-flutter me-2 text-primary"></i> Developed with Flutter framework</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Backend</h5>
+              <ul class="list-unstyled">
+                <li><i class="fab fa-python me-2 text-primary"></i> Python for data processing and analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Database</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-database me-2 text-primary"></i> MySQL for reliable data storage</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Visualization</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-chart-bar me-2 text-primary"></i> Matplotlib & Seaborn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #installation class="py-5">
+      <h3 class="text-center fw-bold mb-5 text-primary">Installation Guide</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">1</div>
+              <h5 class="card-title fw-bold">Clone the Repository</h5>
+              <p class="card-text">Get the source code from GitHub.</p>
+              <pre><code>git clone https://github.com/Ad2m1109/Spendora.git
+cd Spendora</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">2</div>
+              <h5 class="card-title fw-bold">Install Dependencies</h5>
+              <p class="card-text">Install the required Flutter packages.</p>
+              <pre><code>flutter pub get</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">3</div>
+              <h5 class="card-title fw-bold">Run the App</h5>
+              <p class="card-text">Launch the application on your connected device or emulator.</p>
+              <pre><code>flutter run</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #download class="py-5 text-center">
+      <div class="card download-card p-4">
+        <h3 class="fw-bold">Download Spendora</h3>
+        <p class="lead">Ready to take control of your finances? Download the latest release from GitHub.</p>
+        <a href="https://github.com/Ad2m1109/Spendora/releases" class="btn btn-primary btn-lg">
+          <i class="fab fa-github me-2"></i> View Releases
+        </a>
+        <p class="small mt-2">Android & iOS builds available</p>
+      </div>
+    </section>
+  </main>
+
+  <footer #contact class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="fw-bold">About Spendora</h5>
+          <p>Spendora is a personal finance tracking application that helps you manage your income, expenses, and savings goals with an intuitive and visual interface.</p>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-white text-decoration-none" (click)="scrollTo(features)">Features</a></li>
+            <li><a class="text-white text-decoration-none" (click)="scrollTo(technical)">Technical</a></li>
+            <li><a class="text-white text-decoration-none" href="https://github.com/Ad2m1109/Spendora" target="_blank">GitHub</a></li>
+            <li><a class="text-white text-decoration-none" (click)="scrollTo(download)">Download</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5 class="fw-bold">Contact Me</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope me-2"></i> <a href="mailto:ademyoussfi57@gmail.com" class="text-white text-decoration-none">ademyoussfi57@gmail.com</a></li>
+            <li><i class="fab fa-linkedin me-2"></i> <a href="https://www.linkedin.com/in/adem-youssfi-2289672a4" target="_blank" class="text-white text-decoration-none">Adem Youssfi</a></li>
+            <li><i class="fas fa-globe me-2"></i> <a href="https://ademyoussfi.onrender.com" target="_blank" class="text-white text-decoration-none">Personal Website</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center border-top border-secondary pt-3">
+        <p class="mb-0">&copy; 2025 Spendora. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>

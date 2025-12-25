@@ -1,0 +1,129 @@
+<div class="california-housing-page dark-theme">
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold" href="https://ademyoussfi.onrender.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-arrow-left me-2"></i> Back to Hub
+      </a>
+      <a class="navbar-brand fw-bold text-primary mx-auto" href="#">
+        <i class="fas fa-chart-line me-2"></i>Housing Predictor
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navMenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#course" class="nav-link">ML Course</a></li>
+          <li class="nav-item"><a href="#installation" class="nav-link">Installation</a></li>
+          <li class="nav-item"><a href="#resources" class="nav-link">Resources</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="bg-primary text-white text-center py-5 fade-in">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold mb-3">California Housing Price Prediction</h1>
+      <p class="lead mb-4">Predict house prices with advanced machine learning and an intuitive GUI.</p>
+      <a href="#resources" class="btn btn-light btn-lg text-primary fw-semibold">Get Started</a>
+    </div>
+  </section>
+
+  <div class="container py-5">
+    <!-- Features -->
+    <section id="features" class="py-5">
+      <div class="text-center">
+        <h2 class="fw-bold text-primary mb-5 scale-in">Project Features</h2>
+        <div class="row g-4">
+          <div class="col-md-4" *ngFor="let feature of features">
+            <div class="card feature-card h-100 p-4 scale-in">
+              <i [class]="feature.icon + ' text-primary fs-1 mb-3'"></i>
+              <h5 class="fw-semibold">{{ feature.title }}</h5>
+              <p class="text-muted">{{ feature.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course -->
+    <section id="course" class="py-5">
+      <div class="text-center">
+        <h2 class="fw-bold text-primary mb-5 scale-in">Machine Learning Course</h2>
+        <p class="text-muted mb-5">Learn key ML concepts with this project-based course.</p>
+        <div class="row g-4">
+          <div class="col-md-6" *ngFor="let topic of courseTopics">
+            <div class="card course-card p-4 text-start scale-in">
+              <h5 class="text-primary fw-semibold mb-3">{{ topic.title }}</h5>
+              <ul>
+                <li *ngFor="let item of topic.items">{{ item }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interface -->
+    <section id="interface" class="py-5">
+      <div class="text-center">
+        <h2 class="fw-bold text-primary mb-5 scale-in">Application Interface</h2>
+        <div class="card interface-card p-4 mx-auto" style="max-width: 800px;">
+          <img src="https://github.com/Ad2m1109/Machine-Lerning/raw/main/interface.png"
+               class="img-fluid rounded shadow-sm mb-4 scale-in"
+               alt="Interface" />
+          <p class="text-muted">
+            The interface allows users to input housing features and predict house values using the Gradient Boosting model.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation -->
+    <section id="installation" class="py-5">
+      <div class="text-center">
+        <h2 class="fw-bold text-primary mb-4">Installation Guide</h2>
+        <div class="card installation-card p-4 mx-auto text-start" style="max-width: 700px;">
+          <ol class="lh-lg">
+            <li><b>Clone the repository:</b>
+              <pre><code>git clone https://github.com/Ad2m1109/Machine-Lerning.git
+cd Machine-Lerning</code></pre>
+            </li>
+            <li><b>Create a virtual environment:</b>
+              <pre><code>python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate</code></pre>
+            </li>
+            <li><b>Install dependencies:</b>
+              <pre><code>pip install -r requirements.txt</code></pre>
+            </li>
+            <li><b>Run the GUI application:</b>
+              <pre><code>python gui_app.py</code></pre>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Resources -->
+  <section id="resources" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-3 scale-in">Resources</h2>
+      <p class="lead mb-4 scale-in">Access the code and download the application.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="https://github.com/Ad2m1109/Machine-Lerning" class="btn btn-primary">View Code on GitHub</a>
+        <a href="https://github.com/Ad2m1109/Machine-Lerning/releases/download/v1.0/housing_predictor.exe" class="btn btn-outline-light">Download .exe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-4">
+    <p class="mb-2">© 2025 California Housing Price Prediction. Powered by Machine Learning.</p>
+    <a href="https://github.com/Ad2m1109" class="text-white fs-4"><i class="fab fa-github"></i></a>
+  </footer>
+</div>

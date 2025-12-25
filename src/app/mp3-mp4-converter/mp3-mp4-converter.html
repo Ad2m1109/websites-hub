@@ -1,0 +1,280 @@
+<div class="mp3-mp4-converter-page dark-theme">
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="https://ademyoussfi.onrender.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-arrow-left me-2"></i> Back to Hub
+      </a>
+      <a class="navbar-brand fw-bold mx-auto" href="#">
+        <i class="fab fa-youtube text-success me-2"></i>
+        YouTube Converter
+      </a>
+      <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngClass]="{'show': isMenuOpen}">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollTo(features)">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollTo(tech)">Technical</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollTo(installation)">Installation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollTo(download)">Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-4">YouTube MP3/MP4 Converter</h1>
+      <p class="lead mb-4">A powerful Python desktop application with a modern GUI to download YouTube videos in MP4 or extract high-quality audio in MP3 format.</p>
+      <div class="d-flex justify-content-center gap-3 mb-4">
+        <span class="badge bg-light text-dark p-2"><i class="fab fa-python me-1"></i> Python 3.x</span>
+        <span class="badge bg-light text-dark p-2"><i class="fas fa-desktop me-1"></i> CustomTkinter</span>
+        <span class="badge bg-light text-dark p-2"><i class="fas fa-download me-1"></i> yt-dlp</span>
+        <span class="badge bg-light text-dark p-2"><i class="fab fa-github me-1"></i> Open Source</span>
+      </div>
+      <div class="d-flex justify-content-center gap-3">
+        <a class="btn btn-success btn-lg" (click)="scrollTo(download)">
+          <i class="fas fa-download me-2"></i> Download Now
+        </a>
+        <a href="https://github.com/Ad2m1109/convertisseur_MP3_MP4" class="btn btn-outline-light btn-lg">
+          <i class="fab fa-github me-2"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container py-5">
+    <section #features class="py-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Powerful Features</h2>
+        <p class="lead text-muted">Everything you need for downloading and converting YouTube content with ease and efficiency.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card feature-card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon text-primary mb-3">
+                <i class="fas fa-video fa-3x"></i>
+              </div>
+              <h5 class="card-title fw-bold">High-Quality Video Downloads</h5>
+              <p class="card-text">Download YouTube videos in MP4 format with quality options from 144p to 1080p to suit your needs and bandwidth.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card feature-card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon text-primary mb-3">
+                <i class="fas fa-music fa-3x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Audio Extraction</h5>
+              <p class="card-text">Extract high-quality MP3 audio from YouTube videos, perfect for creating playlists and offline listening.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card feature-card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon text-primary mb-3">
+                <i class="fas fa-sliders-h fa-3x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Quality Selection</h5>
+              <p class="card-text">Choose from multiple quality options to balance file size and quality based on your preferences and device capabilities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card feature-card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon text-primary mb-3">
+                <i class="fas fa-folder-open fa-3x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Custom Download Folders</h5>
+              <p class="card-text">Select your preferred download location with an intuitive folder selection interface for better file organization.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card feature-card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon text-primary mb-3">
+                <i class="fas fa-chart-line fa-3x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Real-Time Progress</h5>
+              <p class="card-text">Monitor download progress with a real-time progress bar and status updates throughout the conversion process.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card feature-card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon text-primary mb-3">
+                <i class="fas fa-bolt fa-3x"></i>
+              </div>
+              <h5 class="card-title fw-bold">Asynchronous Processing</h5>
+              <p class="card-text">Multi-threaded download handling ensures the interface remains responsive while processing your downloads.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #tech class="py-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Technical Excellence</h2>
+        <p class="lead text-muted">Built with modern Python technologies and best practices for reliability and performance.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card tech-card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold"><i class="fab fa-python me-2 text-primary"></i> Python 3.x</h5>
+              <p class="card-text">Modern Python development with clean, maintainable code structure.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card tech-card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold"><i class="fas fa-desktop me-2 text-primary"></i> CustomTkinter</h5>
+              <p class="card-text">Modern GUI framework providing a sleek, contemporary interface design.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card tech-card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold"><i class="fas fa-download me-2 text-primary"></i> yt-dlp</h5>
+              <p class="card-text">Robust YouTube downloading library with extensive format support.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card tech-card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold"><i class="fas fa-cogs me-2 text-primary"></i> Threading</h5>
+              <p class="card-text">Asynchronous processing for smooth user experience during downloads.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card tech-card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold"><i class="fas fa-film me-2 text-primary"></i> FFmpeg Integration</h5>
+              <p class="card-text">Professional-grade media processing for optimal audio/video conversion.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card tech-card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold"><i class="fab fa-github me-2 text-primary"></i> Open Source</h5>
+              <p class="card-text">MIT licensed project available on GitHub for transparency and contributions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #installation class="py-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Quick Installation</h2>
+        <p class="lead text-muted">Get up and running in minutes with our straightforward installation process.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card installation-card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">1</div>
+              <h5 class="card-title fw-bold">Clone Repository</h5>
+              <p class="card-text">Download the source code from our GitHub repository.</p>
+              <pre><code>git clone https://github.com/Ad2m1109/convertisseur_MP3_MP4.git
+cd convertisseur_MP3_MP4</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card installation-card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">2</div>
+              <h5 class="card-title fw-bold">Install Dependencies</h5>
+              <p class="card-text">Install all required Python packages using pip.</p>
+              <pre><code>pip install -r requirements.txt</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card installation-card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">3</div>
+              <h5 class="card-title fw-bold">Setup FFmpeg</h5>
+              <p class="card-text">Ensure FFmpeg is installed and available in your system PATH for media processing.</p>
+              <pre><code># Download FFmpeg from https://ffmpeg.org/
+# Add FFmpeg to your system PATH</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card installation-card h-100">
+            <div class="card-body">
+              <div class="badge bg-primary rounded-pill mb-3">4</div>
+              <h5 class="card-title fw-bold">Run Application</h5>
+              <p class="card-text">Launch the application and start downloading your favorite content.</p>
+              <pre><code>python main.py</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section #download class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold">Download YouTube Converter</h2>
+      <p class="lead mb-4">Start downloading and converting YouTube content today with our powerful desktop application.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://github.com/Ad2m1109/convertisseur_MP3_MP4/releases" class="btn btn-success btn-lg">
+          <i class="fas fa-download me-2"></i> Download Latest Release
+        </a>
+        <a href="https://github.com/Ad2m1109/convertisseur_MP3_MP4" class="btn btn-outline-light btn-lg">
+          <i class="fab fa-github me-2"></i> View Source Code
+        </a>
+        <a href="https://github.com/Ad2m1109/convertisseur_MP3_MP4/archive/refs/heads/main.zip" class="btn btn-outline-light btn-lg">
+          <i class="fas fa-file-archive me-2"></i> Download ZIP
+        </a>
+      </div>
+      <div class="mt-5 p-4 bg-light text-dark rounded">
+        <h5 class="fw-bold"><i class="fas fa-info-circle me-2"></i> System Requirements</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item"><strong>OS:</strong> Windows, macOS, Linux</li>
+          <li class="list-inline-item"><strong>Python:</strong> 3.7 or higher</li>
+          <li class="list-inline-item"><strong>RAM:</strong> 512MB minimum</li>
+          <li class="list-inline-item"><strong>Storage:</strong> 100MB free space</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="mb-3">
+        <a href="https://github.com/Ad2m1109/convertisseur_MP3_MP4" class="text-white-50 mx-2">GitHub Repository</a>
+        <a href="https://github.com/Ad2m1109/convertisseur_MP3_MP4/issues" class="text-white-50 mx-2">Report Issues</a>
+        <a href="https://github.com/Ad2m1109/convertisseur_MP3_MP4/blob/main/LICENSE" class="text-white-50 mx-2">MIT License</a>
+        <a href="https://github.com/Ad2m1109" class="text-white-50 mx-2">Developer Profile</a>
+      </div>
+      <div class="border-top border-secondary pt-3">
+        <p class="mb-0">© 2025 YouTube MP3/MP4 Converter. Developed by <a href="https://github.com/Ad2m1109" class="text-success">@Ad2m1109</a></p>
+        <p class="text-white-50 small">Open source project licensed under MIT. Not affiliated with YouTube.</p>
+      </div>
+    </div>
+  </footer>
+</div>

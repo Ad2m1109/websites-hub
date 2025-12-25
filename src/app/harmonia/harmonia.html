@@ -1,0 +1,201 @@
+<div class="harmonia-page dark-theme">
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="https://ademyoussfi.onrender.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-arrow-left me-2"></i> Back to Hub
+      </a>
+      <a class="navbar-brand fw-bold text-primary mx-auto" href="#">
+        <i class="fas fa-brain me-2"></i> Harmonia
+      </a>
+      <button class="navbar-toggler" type="button" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngClass]="{'show': isMenuOpen}">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollToSection('features')" role="button" tabindex="0">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollToSection('tech')" role="button" tabindex="0">Technical</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollToSection('installation')" role="button" tabindex="0">Installation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollToSection('github')" role="button" tabindex="0">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scrollToSection('download')" role="button" tabindex="0">Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section text-white text-center d-flex align-items-center pt-5">
+    <div class="container py-5">
+      <h1 class="display-3 fw-bold mb-4 text-shadow">Harmonia 🧠💙</h1>
+      <p class="lead fs-4 mb-5 mx-auto" style="max-width: 800px;">A privacy-first support app designed specifically to help individuals with Alzheimer's maintain independence while providing caregivers with peace of mind.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a class="btn btn-primary btn-lg rounded-pill shadow-lg px-4" (click)="scrollToSection('download')" role="button">
+          <i class="fas fa-download me-2"></i> Download APK
+        </a>
+        <a class="btn btn-light btn-lg rounded-pill shadow-lg px-4" (click)="scrollToSection('github')" role="button">
+          <i class="fab fa-github me-2"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <section #featuresSection id="features" class="py-5">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3 text-primary">Comprehensive Features</h2>
+        <p class="lead text-muted">Everything needed to maintain independence while ensuring safety and peace of mind for families.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" *ngFor="let feature of features">
+          <div class="card h-100 shadow-sm rounded-3 overflow-hidden">
+            <div class="card-body text-center">
+              <div class="feature-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <i class="{{ feature.icon }} fa-2x"></i>
+              </div>
+              <h5 class="card-title fw-bold mb-3">{{ feature.title }}</h5>
+              <p class="card-text text-muted">{{ feature.description }}</p>
+            </div>
+            <img [src]="feature.image" class="card-img-bottom" [alt]="feature.title">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #techSection id="tech" class="py-5">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3 text-primary">Technical Excellence</h2>
+        <p class="lead text-muted">Built with Flutter and privacy-first architecture for reliable, secure, and accessible healthcare technology.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" *ngFor="let tech of techDetails">
+          <div class="card h-100 shadow-sm rounded-3">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-4">
+                <i class="{{ tech.icon }} text-primary me-2"></i> {{ tech.title }}
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2" *ngFor="let item of tech.items">
+                  <i class="fas fa-check-circle text-success me-2"></i>{{ item }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #installationSection id="installation" class="py-5">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3 text-primary">Quick Installation Guide</h2>
+        <p class="lead text-muted">Get Harmonia running on your Android device in just a few simple steps.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm rounded-3">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-primary rounded-circle fs-5 me-3" style="width: 40px; height: 40px; line-height: 24px;">1</span>
+                <h5 class="card-title mb-0 fw-bold">Download APK</h5>
+              </div>
+              <p class="card-text text-muted">Download the latest Harmonia APK file from our secure download link or scan the QR code.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm rounded-3">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-primary rounded-circle fs-5 me-3" style="width: 40px; height: 40px; line-height: 24px;">2</span>
+                <h5 class="card-title mb-0 fw-bold">Enable Unknown Sources</h5>
+              </div>
+              <p class="card-text text-muted">Allow installation from unknown sources in your Android settings if prompted.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm rounded-3">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-primary rounded-circle fs-5 me-3" style="width: 40px; height: 40px; line-height: 24px;">3</span>
+                <h5 class="card-title mb-0 fw-bold">Install Application</h5>
+              </div>
+              <p class="card-text text-muted">Open your Downloads folder, tap the APK file, and follow the installation prompts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm rounded-3">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-primary rounded-circle fs-5 me-3" style="width: 40px; height: 40px; line-height: 24px;">4</span>
+                <h5 class="card-title mb-0 fw-bold">Setup & Configuration</h5>
+              </div>
+              <p class="card-text text-muted">Complete the initial setup process and configure notifications for optimal experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section #githubSection id="github" class="py-5">
+      <div class="card text-center p-4">
+        <h2 class="display-5 fw-bold mb-3">Open Source Development</h2>
+        <p class="lead text-muted mb-5">Harmonia is proudly open source, built with transparency and community collaboration in mind.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="https://github.com/Ad2m1109/Harmonia" class="btn btn-primary btn-lg rounded-pill shadow" target="_blank" rel="noopener">
+            <i class="fab fa-github me-2"></i> View Repository
+          </a>
+          <a href="https://github.com/Ad2m1109/Harmonia/releases" class="btn btn-secondary btn-lg rounded-pill shadow" target="_blank" rel="noopener">
+            <i class="fas fa-download me-2"></i> Download Releases
+          </a>
+          <a href="mailto:ademyoussfi57@gmail.com?subject=Harmonia%20App%20Issue%20Report" class="btn btn-info btn-lg rounded-pill shadow">
+            <i class="fas fa-bug me-2"></i> Report Issues
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section #downloadSection id="download" class="py-5">
+      <div class="text-center py-4">
+        <h2 class="display-5 fw-bold mb-3">Download Harmonia Today</h2>
+        <p class="lead text-muted mb-5">Start supporting your loved one's independence and your peace of mind with our privacy-first app.</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card p-4 shadow-sm mb-4">
+              <img src="/assets/harmonia/qrcode.png" alt="QR Code to download Harmonia app" class="img-fluid rounded shadow-sm mb-3" style="max-width: 300px; margin: auto;">
+              <p class="text-muted mb-3">Scan to download</p>
+              <a href="https://drive.google.com/file/d/1OsRNWXsDYrIwictacD5pFdjwMN3noyxj/view?usp=drive_link"
+                 class="btn btn-primary btn-lg rounded-pill shadow-lg px-5"
+                 target="_blank"
+                 rel="noopener">
+                <i class="fas fa-download me-2"></i> Direct Download APK
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-2">© 2025 Harmonia Development Team. All rights reserved.</p>
+      <p class="mb-0 text-white-50">Made with <i class="fas fa-heart text-danger"></i> for families affected by Alzheimer's.</p>
+    </div>
+  </footer>
+
+  <button class="btn btn-primary scroll-to-top shadow-lg"
+          [ngClass]="{'show': isScrolled}"
+          (click)="scrollToTop()"
+          aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</div>
